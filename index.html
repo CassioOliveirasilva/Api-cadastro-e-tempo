@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cadastro e Tempo</title>
+  </head>
+  <body>
+    
+    <section class="itens-cadastro">
+      <h1 class="cabecalho">Cadastro de pesquisa</h1>
+
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" placeholder="Digite seu nome completo" />
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" placeholder="Digite seu e-mail" />
+
+      <label for="telefone">Telefone:</label>
+      <input type="tel" id="telefone" placeholder="Digite seu telefone" />
+
+      <label for="logradouro">Logradouro:</label>
+      <input type="text" id="logradouro" placeholder="Digite o logradouro"/>
+
+      <label for="bairro">Bairro:</label>
+      <input type="text" id="bairro" placeholder="Digite o bairro" />
+
+      <label for="cidade">Cidade:</label>
+      <input type="text" id="cidade" placeholder="Digite a cidade" />
+
+      <label for="uf">Estado (UF):</label>
+      <input type="text" id="uf" placeholder="Digite o estado" />
+
+      <label for="cep">CEP:</label>
+      <input type="number" id="cep"placeholder="Digite o seu cep" required onblur="buscarEndereco()"/>
+      <div>
+      <button onclick="salvar()">Buscar</button>
+      </div>
+    </section>
+    <section class="tempo">
+        <p id="temperatura"></p>
+        <p id="descricao"></p>
+        <p id="horaLocal"></p>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

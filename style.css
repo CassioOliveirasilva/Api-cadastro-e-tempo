@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+
+}
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 40px;
+    color: rgb(4, 4, 22);
+    padding: 2% 0 0 0;
+}
+.itens-cadastro {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    background-color: rgb(66, 112, 192);
+    border: solid ;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 2% 30%;
+    font-size: 30px;
+    gap:10px;
+}
+input {
+    background-color: rgb(183, 181, 186);
+    padding: 8px;
+    border-radius: 10px;
+    
+}
+button {
+    font-size: 20px;
+    padding: 15px;
+    border: solid;
+    border-radius: 10px;
+    border-color: black;
+    background-color: rgb(172, 81, 81);
+}
+
+.tempo {
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    width: 500px;
+    background-color: rgb(66, 112, 192);
+    border: solid;
+    border-color: black;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 3% 30%;
+    font-size: 30px;
+    gap:10px;
+}
