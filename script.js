@@ -4,6 +4,7 @@ document.getElementById('bairro').value = "";
 document.getElementById('cidade').value = "";
 document.getElementById('uf').value = "";
 }
+
 function buscarClima() {
     const cidade = document.getElementById('cidade').value;
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cidade}&appid=8cc85b402a733c3c45ec84e3dd06f83e&lang=pt`)
@@ -24,12 +25,25 @@ function buscarClima() {
                 timeZone: 'UTC' 
             });
     document.getElementById("horaLocal").textContent = `Hora local: ${formatadorDeHora.format(horaLocal)}`;
-    document.getElementById('temperatura').textContent = `Temperatura: ${temperatura}°C`;
+    document.getElementById('temperatura').textContent = `Temperatura: ${temperatura}°C`;    
     document.getElementById('descricao').textContent = `Descrição: ${descricao}`;
+    aplicarCorTemperatura(parseFloat(temperatura));
     })
+   
     .catch(error => {
     console.log('Erro:', error);
     });
+}
+function aplicarCorTemperatura(temp) {
+    const elemento = document.getElementById('temperatura');
+
+    if (temp < 15) {
+        elemento.style.color = "blue";
+    } else if (temp >= 15 && temp <= 30) {
+        elemento.style.color = "green";
+    } else {
+        elemento.style.color = "red";
+    }
 }
 
 function salvar() {

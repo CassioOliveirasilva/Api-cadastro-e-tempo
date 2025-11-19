@@ -6,7 +6,7 @@
 body {
     display: flex;
     flex-direction: column;
-    background-color: aqua;
+    background-color: rgb(85, 94, 94);
 
 }
 .cabecalho {
@@ -21,16 +21,17 @@ body {
     display: flex;
     flex-direction: column;
     max-width: 600px;
-    background-color: rgb(66, 112, 192);
+    background-color: rgba(88, 126, 192, 0.963);
     border: solid ;
     border-radius: 15px;
+    box-shadow: 20px 15px rgb(45, 47, 47);
     padding: 20px;
     margin: 2% 30%;
     font-size: 30px;
     gap:10px;
 }
 input {
-    background-color: rgb(183, 181, 186);
+    background-color: rgba(220, 215, 226, 0.87);
     padding: 8px;
     border-radius: 10px;
     
@@ -47,13 +48,14 @@ button {
 .tempo {
     display: flex;
     flex-direction: column;
-    color: aliceblue;
+    color: rgb(3, 22, 39);
     width: 500px;
-    background-color: rgb(66, 112, 192);
+    background-color:  rgba(88, 126, 192, 0.963);
     border: solid;
     border-color: black;
+    box-shadow: 20px 15px rgb(45, 47, 47);
     border-radius: 15px;
-    padding: 20px;
+    padding: 30px;
     margin: 3% 30%;
     font-size: 30px;
     gap:10px;
