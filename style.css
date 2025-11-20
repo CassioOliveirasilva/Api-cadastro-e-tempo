@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400..700;1,400..700&family=Kelly+Slab&family=Zen+Dots&display=swap');
 :root {
-    --cor-primaria: rgba(88, 126, 192, 0.963);
+    --cor-primaria: linear-gradient(90deg, #0071BC, #38b6ff);
     --cor-secundaria: rgb(128, 147, 147);
     --cor-shadows: rgb(63, 67, 67);
 
@@ -17,6 +17,9 @@
 body {
     display: flex;
     flex-direction: column;
+    background-image: url(./assets/backgroud.jpg);
+    background-size: 1000px;
+    /*se a imgagem não carregar*/
     background-color: var(--cor-secundaria);
 
 }
@@ -30,12 +33,13 @@ body {
     color: rgb(4, 4, 22);
     padding: 2% 0 0 0;
 }
+/* FORMULÁRIO */
 .itens-cadastro {
     display: flex;
     flex-direction: column;
     max-width: 600px;
-    background-color: var(--cor-primaria);
-    font-family: var(--font-terciaria);
+    background-image: var(--cor-primaria);
+    font-family: var(--font-secundaria);
     border: solid ;
     border-radius: 15px;
     box-shadow: 20px 15px var(--cor-shadows);
@@ -49,14 +53,20 @@ label {
 }
 ::placeholder {
     font-family: var(--font-terciaria);
+    font-size: 18px;
 }
 input {
     background-color: rgba(220, 215, 226, 0.87);
     padding: 8px;
+    border: solid 2px;
+    border-top-color: rgb(150, 148, 148);
+    border-bottom-color: black;
     border-radius: 10px;
     
 }
 button {
+    font-family: var(--font-secundaria);
+    font-weight: 600;
     font-size: 20px;
     padding: 15px;
     border: solid;
@@ -64,20 +74,42 @@ button {
     border-color: black;
     background-color: rgb(172, 81, 81);
 }
-
+/* ÁREA DO CLIMA */
 .tempo {
     display: flex;
     flex-direction: column;
     color: rgb(3, 22, 39);
     width: 500px;
-    background-color: var(--cor-primaria);
+    background-image: var(--cor-primaria);
     border: solid;
     border-color: black;
     box-shadow: 20px 15px var(--cor-shadows);
     border-radius: 15px;
     padding: 20px;
     margin: 2% 30%;
-    font-family: var(--font-terciaria);
+    font-family: var(--font-secundaria);
     font-size: 30px;
     gap:10px;
+}
+@media (max-width: 600px) {
+.cabecalho {
+    font-size: 22px;
+    padding-top: 15px;
+}
+
+.itens-cadastro,.tempo {
+    font-size: 20px;
+    padding: 15px;
+    box-shadow: 10px 8px var(--cor-shadows);
+}
+
+input {
+    padding: 10px;
+    font-size: 18px;
+}
+
+button {
+    font-size: 18px;
+    padding: 12px;
+}
 }
