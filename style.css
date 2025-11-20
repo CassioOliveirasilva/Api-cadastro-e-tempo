@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400..700;1,400..700&family=Kelly+Slab&family=Zen+Dots&display=swap');
+:root {
+    --cor-primaria: rgba(88, 126, 192, 0.963);
+    --cor-secundaria: rgb(128, 147, 147);
+    --cor-shadows: rgb(63, 67, 67);
+
+    --font-primaria:"Zen Dots", sans-serif;
+    --font-secundaria: "Kelly Slab", sans-serif;
+    --font-terciaria: "Cuprum", sans-serif;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -6,14 +17,16 @@
 body {
     display: flex;
     flex-direction: column;
-    background-color: rgb(85, 94, 94);
+    background-color: var(--cor-secundaria);
 
 }
 .cabecalho {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 40px;
+    font-family: var(--font-primaria);
+    font-size: 30px;
+    font-weight: 400;
     color: rgb(4, 4, 22);
     padding: 2% 0 0 0;
 }
@@ -21,13 +34,14 @@ body {
     display: flex;
     flex-direction: column;
     max-width: 600px;
-    background-color: rgba(88, 126, 192, 0.963);
+    background-color: var(--cor-primaria);
+    font-family: var(--font-terciaria);
     border: solid ;
     border-radius: 15px;
-    box-shadow: 20px 15px rgb(45, 47, 47);
+    box-shadow: 20px 15px var(--cor-shadows);
     padding: 20px;
     margin: 2% 30%;
-    font-size: 30px;
+    font-size: 25px;
     gap:10px;
 }
 input {
@@ -50,13 +64,14 @@ button {
     flex-direction: column;
     color: rgb(3, 22, 39);
     width: 500px;
-    background-color:  rgba(88, 126, 192, 0.963);
+    background-color: var(--cor-primaria);
     border: solid;
     border-color: black;
-    box-shadow: 20px 15px rgb(45, 47, 47);
+    box-shadow: 20px 15px var(--cor-shadows);
     border-radius: 15px;
-    padding: 30px;
-    margin: 3% 30%;
+    padding: 20px;
+    margin: 2% 30%;
+    font-family: var(--font-terciaria);
     font-size: 30px;
     gap:10px;
 }
