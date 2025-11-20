@@ -41,8 +41,14 @@ body {
     box-shadow: 20px 15px var(--cor-shadows);
     padding: 20px;
     margin: 2% 30%;
-    font-size: 25px;
+    font-size: 26px;
     gap:10px;
+}
+label {
+    padding-top: 12px;
+}
+::placeholder {
+    font-family: var(--font-terciaria);
 }
 input {
     background-color: rgba(220, 215, 226, 0.87);
